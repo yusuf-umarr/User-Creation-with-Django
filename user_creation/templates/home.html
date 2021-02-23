@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel ="stylesheet"  href="{% static '/js/jquery.min.js' %}">
+</head>
+<body bgcolor="ryan">
+
+    <div class="container">
+        <div></div>
+        <h3>Hello {% if user.is_authenticated %} {{user.username}} {% else %}  {% endif %}  </h3>   
+       
+    </div> 
+</body>
+</html>
+
+
+
+{% endblock %}
