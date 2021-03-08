@@ -24,7 +24,7 @@ class singup_form(forms.ModelForm):
             raise forms.ValidationError ("password does not match")
 
     def clean_username(self):
-        if User.objects.filter(email=self.cleaned_data['username']).exists():
+        if User.objects.filter(username=self.cleaned_data['username']).exists():
             raise forms.ValidationError("username taken")
         return self.cleaned_data['username']
 
