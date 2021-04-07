@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from user_creation.models import user_data
 from user_creation.forms import singup_form
-from django.core.files.storage import FileSystemStorage
+#from django.core.files.storage import FileSystemStorage
 
 
 # Create your views here.
