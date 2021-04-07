@@ -7,10 +7,10 @@ from django.core.files.storage import FileSystemStorage
 
 
 # Create your views here.
-def home(request):
+def index(request):
 
    
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def registration(request):
     
